@@ -245,3 +245,20 @@ p {
   background: var(--accent-color);
   transition: background 250ms var(--timing-function);
 }
+/* Форма подписки */
+.subscription {
+  display: block;
+  padding-left: 93px;
+}
+.subscription-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
+.subscription-btn {
+  margin-top: 20px;
+}
