@@ -311,27 +311,32 @@
   /* min-height: 581px; */
   background-color: var(--primary-bg-color);
 }
-.btn-modal {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
+.closed {
   position: relative;
+}
+.btn-modal {
+  position: absolute;
   top: 8px;
   right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-bg-color);
+  fill: #000;
   cursor: pointer;
+  transition: fill 250ms var(--timing-function);
 }
-.closed {
+/* .closed {
   position: absolute;
   top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%);
-}
+} */
 .form {
   width: 100%;
   height: 100%;
