@@ -280,6 +280,7 @@ p {
   border-radius: 4px;
 }
 .subscription button {
+  position: relative;
   width: 200px;
   padding: 10px 10px 10px 29px;
 
@@ -297,4 +298,15 @@ p {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+.modal-svg {
+  position: relative;
+}
+.send {
+  /* position: absolute; */
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  display: inline-block;
+  fill: #ffffff;
 }

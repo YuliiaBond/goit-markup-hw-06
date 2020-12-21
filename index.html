@@ -372,6 +372,9 @@
                     <div class="subscription-btns">
                         <input type="email" name="mail" placeholder="E-mail">
                         <button type="submit">Подписаться</button>
+                        <svg class="send" width="24" height="24">
+                            <use href="./images/sprite2.svg#icon-send"></use>
+                        </svg>
                     </div>
                 </form>
             </div>
@@ -380,25 +383,36 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="btn-modal">&#10005</button>
+            <div class="modal-svg">
+            <button data-modal-close class="btn-modal"></button>
+            <svg class="closed" width="11" height="11">
+                <use href="./images/sprite.svg#icon-closed"></use>
+            </svg>
+            </div>
             <form action="#" class="form">
                 <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
                 <div class="form-field">
-                    <label for="user">Имя</label>
-                    <input type="text" name="user" id="user" placeholder=" ">
+                    <label for="user" class="form-label">Имя</label>
+                    <input type="text" class="form-input" name="user" id="user" placeholder=" ">
                     <svg class="user" width="12" height="12">
-                        <use href="./images/sprite2.svg#icon-user"></use>
+                        <use href="./images/sprite.svg#icon-user"></use>
                     </svg>
                 </div>
 
                 <div class="form-field">
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="">
-                </div>
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone" placeholder="">
+                    <svg class="phone" width="13" height="13">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+            </div>
                 
                 <div class="form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail" placeholder="">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" placeholder="">
+                    <svg class="email" width="15" height="12">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
                 </div>
                 
                 <div class="form-field textarea">
@@ -406,9 +420,10 @@
                 <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                 </div>
 
-                <div class="form-field checkbox">
-                <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю
+                <div class="form-checkbox">
+                <input type="checkbox" class="check-box" name="agreement" value="agreement" id="agreement">
+                <span class="check"></span>
+                <label for="agreement" class="check-label">Соглашаюсь с рассылкой и принимаю
                     <a href="#" class="form-link">Условия договора</a>
                 </label>
                 </div>
